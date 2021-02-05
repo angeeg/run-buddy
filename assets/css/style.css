@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 body {
@@ -8,8 +9,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
 
-header, ul {
-    padding: 15px 35px;
+header{
+    padding: 20px 35px;
     background-color: #39a6b2;
   }
 
@@ -20,20 +21,6 @@ header, ul {
     margin: 0;
     display: inline;
 
-  }
-
-  header a, ul {
-    color: #fce138;
-    margin: 0;
-  }
-
-  .list a {
-    color:#fce138;
-    
-  }
-
-  ul {
-      list-style-type: none;
   }
 
   header a {
@@ -55,6 +42,27 @@ header, ul {
     font-weight: lighter;
     font-size: 22px;
   }
+
+  footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
  
-  
+  footer a {
+    color: #024e76;
+  }
 
