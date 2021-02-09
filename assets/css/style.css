@@ -270,3 +270,19 @@
 }
 
 /* REACH OUT STYLE END */
+
+/* Privacy Policy Page */
+.hero-secondary {
+  background-image: url('https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg');
+  height: 135px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #fce138;
+  font-style: italic;
+  text-align: center;
+}
