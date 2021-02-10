@@ -1,0 +1,3 @@
+* We have created a webpage that guides the viewer to easily sign up for a personal trainer, with the theme being running. 
+* All the links have been made accessible and redirect the viewer to the appropriate section of the homepage or to a different page altogether 
+* CSS is consolidated and follows semantic structure to make the layout of each page run smoothly and adjust accorddingly to window size 
