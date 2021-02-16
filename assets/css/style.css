@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }s
+
+  :root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
   }
   
   body {
@@ -13,7 +19,7 @@
   /* HEADER / NAV BAR STYLES START */
 .header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--teritary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,6 +30,7 @@
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
+    z-index: 9999;
   }
   
   .header h1 {
@@ -36,7 +43,7 @@
 
   .header a {
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);
   }
   
   .header nav {
@@ -59,13 +66,13 @@
   }
 
   header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
   }
 
-  /* HEADER / NAVBAR STYLES END */
+  /* HEADER / NAVBAR STYLES END*/
 
 /* FOOTER STYLES START */
   footer {
@@ -78,7 +85,7 @@
   }
   
   footer h2 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
   }
@@ -138,7 +145,7 @@
   }
   
   .hero-form button:hover {
-    background-color: #39a6b2;  
+    background-color: var(--teritary-color);  
   }
 
   .hero-form h3 {
@@ -150,7 +157,6 @@
   }
   
   .form-input {
-    border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
@@ -158,12 +164,18 @@
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
   }
 
   .form-input:focus {
     background-color: rgba(255, 255, 255, 1);
     outline: none;
+  }
+
+  .class-of-inputs {
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    color: #024e76;
   }
   
   .hero-form label {
@@ -179,7 +191,61 @@
     border-radius: 10px;
   }
 
-  
+
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}  
+
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid #024e76;  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #024e76;
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input:checked + label,
+.radio-wrapper input:checked + label {
+  font-weight: bold;
+}
   /* HERO STYLES END */
 
   /* SECTION TITLE STYLE START */
